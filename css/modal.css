@@ -15,6 +15,45 @@
   padding: 13px;
 }
 
+.modal-header {
+  border-bottom: none;
+  padding-top: 25px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.image-select.selected {
+  border: solid 4px;
+  border-image: linear-gradient(
+      to right,
+      rgba(78, 10, 148, 1),
+      rgba(7, 69, 255, 1)
+    )
+    1;
+  border-radius: 20px;
+}
+
+.image-select {
+  border-radius: 15px;
+  transition: 0.1s;
+}
+
+.btn-close {
+  color: #fff !important;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .img-option {
+    padding: 20px 0;
+  }
+}
+
 .container-chk {
   display: block;
   position: relative;

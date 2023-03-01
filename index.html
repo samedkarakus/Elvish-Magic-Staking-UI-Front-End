@@ -2,15 +2,22 @@
 <html lang="en">
   <head>
     <title>EMP Staking Dashboard</title>
-    <meta property="og:title" content="EMP Staking Dashboard" /> 
+    <meta property="og:title" content="EMP Staking Dashboard" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
-    <link rel="shortcut icon" type="image/png" href="public/playground_assets/davan211146-14n-200w.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="public/playground_assets/davan211146-14n-200w.png" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font" />
+    <link
+      href="//db.onlinewebfonts.com/c/959f53f573bc5ee71117e312bd886f42?family=Artegra+Sans+Extended+SC+W15"
+      rel="stylesheet"
+      type="text/css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
@@ -76,12 +83,12 @@
       select {
         text-transform: none;
       }
-      button,
+      /* button,
       [type="button"],
       [type="reset"],
       [type="submit"] {
         -webkit-appearance: button;
-      }
+      } */
       button::-moz-focus-inner,
       [type="button"]::-moz-focus-inner,
       [type="reset"]::-moz-focus-inner,
@@ -136,33 +143,50 @@
       data-tag="font" />
     <link rel="stylesheet" href="css/footer.css" />
     <link href="css/home.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/loader.css">
-
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/loader.css" />
   </head>
   <body>
     <nav class="navbar navbar-dark navbar-expand-lg pt-5">
       <div class="container-fluid justify-content-between w-75">
-        <a class="navbar-brand d-flex align-items-center" href="https://elvishmagic.com/">
-          <img src="modal/elvishMagicW.png" width="100px" class="d-inline-block align-text-top" style="font-weight: bold;">
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="https://elvishmagic.com/">
+          <img
+            src="modal/elvishMagicW.png"
+            width="100px"
+            class="d-inline-block align-text-top"
+            style="font-weight: bold" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 justify-content-between">
+          <ul
+            class="navbar-nav mx-lg-auto mb-2 mb-lg-0 justify-content-between">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">EMP Staking</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >EMP Staking</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Docs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled">Govern</a>
-            </li> 
+            </li>
           </ul>
           <form class="d-flex" role="search">
-            <button class="btn navbar-button" type="submit">Connect Wallet</button>
+            <button class="btn navbar-button" type="submit">
+              Connect Wallet
+            </button>
           </form>
         </div>
       </div>
@@ -204,22 +228,9 @@
                       </div>
                     </div>
                   </div>
-                  <style>
-                    .option.selected {
-                      background-image: linear-gradient(
-                        150deg,
-                        rgba(78, 10, 148, 1) 0%,
-                        rgba(7, 69, 255, 1) 100%
-                      );
-                      color: #fff;
-                    }
-                  </style>
                   <div class="home-bottom">
                     <div class="home-apy-details">
                       <div class="home-apy-details1">
-                        <!-- <span class="home-text12">
-                          <span>Lock period: 07 days</span>
-                        </span> -->
                         <span class="home-text14">
                           <span>Extends lock on registration: Yes</span>
                         </span>
@@ -238,7 +249,10 @@
                     <div class="home-stake-claim-container">
                       <div class="home-stake-container">
                         <div class="home-stake-amount">
-                          <input type="text" placeholder="0.00" class="home-text24"></input>
+                          <input
+                            type="text"
+                            placeholder="0.00"
+                            class="home-text24" />
                         </div>
                         <div class="home-container1">
                           <div class="home-stake-btn">
@@ -249,12 +263,94 @@
                           </div>
                         </div>
                       </div>
-                      <div class="home-claim-container">
-                        <div class="home-claim-amount">
-                          <input type="text" placeholder="0.00" class="home-text28"></input>
-                        </div>
+                      <div
+                        class="home-claim-container w-100 justify-content-between">
                         <div class="home-claim-btn">
                           <span class="home-text30">Claim</span>
+                        </div>
+                        <div
+                          class="home-nft-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#imageModal">
+                          <span class="home-nft-text">Choose NFT</span>
+                          <span class="home-nft-optional">(optional)</span>
+                        </div>
+                        <div
+                          class="modal fade"
+                          id="imageModal"
+                          tabindex="-1"
+                          aria-labelledby="imageModalLabel"
+                          aria-hidden="true">
+                          <div
+                            class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5
+                                  class="modal-title w-100"
+                                  style="font-size: 28px"
+                                  id="imageModalLabel">
+                                  Select a NFT
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="col-md-3 img-option">
+                                    <img
+                                      src="NFTs/platinum.png"
+                                      class="img-fluid image-select"
+                                      data-img="1" />
+                                  </div>
+                                  <div class="col-md-3 img-option">
+                                    <img
+                                      src="NFTs/gold.png"
+                                      class="img-fluid image-select"
+                                      data-img="2" />
+                                  </div>
+                                  <div class="col-md-3 img-option">
+                                    <img
+                                      src="NFTs/silver.png"
+                                      class="img-fluid image-select"
+                                      data-img="3" />
+                                  </div>
+                                  <div class="col-md-3 img-option">
+                                    <img
+                                      src="NFTs/bronze.png"
+                                      class="img-fluid image-select"
+                                      data-img="4" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer mx-auto">
+                                <!-- <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal">
+                                  Close
+                                </button> -->
+                                <button
+                                  type="button"
+                                  class="btn btn-primary"
+                                  id="chooseImageBtn"
+                                  style="font-weight: bold"
+                                  data-bs-dismiss="modal"
+                                  disabled>
+                                  Choose
+                                </button>
+                                <!-- <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  id="deselectImageBtn"
+                                  disabled>
+                                  Deselect
+                                </button> -->
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -314,289 +410,6 @@
                     NFTs to integrate with blockchain.
                   </span>
                 </span>
-                <button
-                  type="button"
-                  class="btn home-frame119"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">
-                  <span class="home-text51"><span>Stake NFT Now</span></span>
-                </button>
-                <!-- <div class="home-frame119">
-                  <span class="home-text51"><span>Stake NFT Now</span></span>
-                </div> -->
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div
-                    class="modal-dialog modal-dialog-centered mx-auto modal-xl"
-                    role="document">
-                    <div class="modal-content">
-                      <div class="modal-header border-0 mb-2 mt-3">
-                        <h5
-                          class="modal-title center"
-                          id="exampleModalLabel"></h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <div>
-                          <div class="home-container">
-                            <div class="home-modal-nftcards">
-                              <div class="home-modal-platinum">
-                                <div class="home-modal-platinum-contaier">
-                                  <div class="home-modal-title-container">
-                                    <div class="home-titlecontain">
-                                      <div class="home-title">
-                                        <span class="home-text">
-                                          <span>Stake Platinum NFT</span>
-                                        </span>
-                                        <span class="home-text02">
-                                          <span>Stake NFT Earn EMP</span>
-                                        </span>
-                                      </div>
-                                      <img
-                                        src="public/playground_assets/davan219910-xvgp-200w.png"
-                                        alt="davan219910"
-                                        class="home-davan21" />
-                                    </div>
-                                  </div>
-                                  <img
-                                    src="public/playground_assets/platinum19913-np-300h.png"
-                                    alt="platinum19913"
-                                    class="home-platinum1" />
-                                  <div class="home-modal-details">
-                                    <div class="home-apr">
-                                      <span class="home-text42"
-                                        ><span>APR:</span></span
-                                      >
-                                      <span class="home-text44"
-                                        ><span>125.56%</span></span
-                                      >
-                                    </div>
-                                    <div class="home-earned">
-                                      <span class="home-text46"
-                                        ><span>Earned:</span></span
-                                      >
-                                      <span class="home-text48"
-                                        ><span>13k EMP</span></span
-                                      >
-                                    </div>
-                                    <div class="home-staked">
-                                      <span class="home-text69"
-                                        ><span>Staked NFT:</span></span
-                                      >
-                                      <span class="home-text52">3</span>
-                                    </div>
-                                  </div>
-                                  <button class="home-modal-buttons">
-                                    <div class="home-modal-stake">
-                                      <span class="home-text15"
-                                        ><span>Stake/Unstake</span></span
-                                      >
-                                    </div>
-                                    <div class="home-modal-claim">
-                                      <span class="home-text17"
-                                        ><span>Claim</span></span
-                                      >
-                                    </div>
-                                  </button>
-                                </div>
-                              </div>
-                              <div class="home-modal-gold">
-                                <div class="home-modal-contain">
-                                  <div class="home-modal-titlecontainer">
-                                    <div class="home-modal-titlecontain">
-                                      <div class="home-modal-title">
-                                        <span class="home-text19">
-                                          <span>Stake Golden NFT</span>
-                                        </span>
-                                        <span class="home-text21">
-                                          <span>Stake NFT Earn EMP</span>
-                                        </span>
-                                      </div>
-                                      <img
-                                        src="public/playground_assets/davan211145-7rbe-200w.png"
-                                        alt="davan211145"
-                                        class="home-davan211" />
-                                    </div>
-                                  </div>
-                                  <img
-                                    src="public/playground_assets/gold11146-4tka-300h.png"
-                                    alt="gold11146"
-                                    class="home-gold1" />
-                                  <div class="home-modal-details1">
-                                    <div class="home-apr1">
-                                      <span class="home-text23"
-                                        ><span>APR:</span></span
-                                      >
-                                      <span class="home-text25"
-                                        ><span>125.56%</span></span
-                                      >
-                                    </div>
-                                    <div class="home-earned1">
-                                      <span class="home-text46"
-                                        ><span>Earned:</span></span
-                                      >
-                                      <span class="home-text29"
-                                        ><span>13k EMP</span></span
-                                      >
-                                    </div>
-                                    <div class="home-staked1">
-                                      <span class="home-text69"
-                                        ><span>Staked NFT:</span></span
-                                      >
-                                      <span class="home-text52">3</span>
-                                    </div>
-                                  </div>
-                                  <button class="home-modal-buttons1">
-                                    <div class="home-stake">
-                                      <span class="home-text34"
-                                        ><span>Stake/Unstake</span></span
-                                      >
-                                    </div>
-                                    <div class="home-claim">
-                                      <span class="home-text36"
-                                        ><span>Claim</span></span
-                                      >
-                                    </div>
-                                  </button>
-                                </div>
-                              </div>
-                              <div class="home-modal-silver">
-                                <div class="home-modal-contain1">
-                                  <div class="home-modal-titlecontainer1">
-                                    <div class="home-modal-titlecontain1">
-                                      <div class="home-modal-title1">
-                                        <span class="home-text38">
-                                          <span>Stake Silver NFT</span>
-                                        </span>
-                                        <span class="home-text40">
-                                          <span>Stake NFT Earn EMP</span>
-                                        </span>
-                                      </div>
-                                      <img
-                                        src="public/playground_assets/davan211145-psya-200h.png"
-                                        alt="davan211145"
-                                        class="home-davan212" />
-                                    </div>
-                                  </div>
-                                  <img
-                                    src="public/playground_assets/silver11146-f26h-300h.png"
-                                    alt="silver11146"
-                                    class="home-silver1" />
-                                  <div class="home-modal-details2">
-                                    <div class="home-apr2">
-                                      <span class="home-text42"
-                                        ><span>APR:</span></span
-                                      >
-                                      <span class="home-text44"
-                                        ><span>125.56%</span></span
-                                      >
-                                    </div>
-                                    <div class="home-earned2">
-                                      <span class="home-text46"
-                                        ><span>Earned:</span></span
-                                      >
-                                      <span class="home-text48"
-                                        ><span>13k EMP</span></span
-                                      >
-                                    </div>
-                                    <div class="home-staked2">
-                                      <span class="home-text50"
-                                        ><span>Staked NFT:</span></span
-                                      >
-                                      <span class="home-text52">3</span>
-                                    </div>
-                                  </div>
-                                  <button class="home-buttons">
-                                    <div class="home-stake1">
-                                      <span class="home-text53"
-                                        ><span>Stake/Unstake</span></span
-                                      >
-                                    </div>
-                                    <div class="home-claim1">
-                                      <span class="home-text55"
-                                        ><span>Claim</span></span
-                                      >
-                                    </div>
-                                  </button>
-                                </div>
-                              </div>
-                              <div class="home-modal-bronze">
-                                <div class="home-modal-contain2">
-                                  <div class="home-modal-titlecontainer2">
-                                    <div class="home-modal-titlecontain2">
-                                      <div class="home-modal-title2">
-                                        <span class="home-text57">
-                                          <span>Stake Bronze NFT</span>
-                                        </span>
-                                        <span class="home-text59">
-                                          <span>Stake NFT Earn EMP</span>
-                                        </span>
-                                      </div>
-                                      <img
-                                        src="public/playground_assets/davan211146-14n-200w.png"
-                                        alt="davan211146"
-                                        class="home-davan213" />
-                                    </div>
-                                  </div>
-                                  <img
-                                    src="public/playground_assets/bronze11146-grft-300h.png"
-                                    alt="bronze11146"
-                                    class="home-bronze1" />
-                                  <div class="home-details">
-                                    <div class="home-apr3">
-                                      <span class="home-text61"
-                                        ><span>APR:</span></span
-                                      >
-                                      <span class="home-text63"
-                                        ><span>125.56%</span></span
-                                      >
-                                    </div>
-                                    <div class="home-earned3">
-                                      <span class="home-text65"
-                                        ><span>Earned:</span></span
-                                      >
-                                      <span class="home-text67"
-                                        ><span>13k EMP</span></span
-                                      >
-                                    </div>
-                                    <div class="home-staked3">
-                                      <span class="home-text69"
-                                        ><span>Staked NFT:</span></span
-                                      >
-                                      <span class="home-text71">3</span>
-                                    </div>
-                                  </div>
-                                  <button class="home-buttons1">
-                                    <div class="home-stake2">
-                                      <span class="home-text72"
-                                        ><span>Stake/Unstake</span></span
-                                      >
-                                    </div>
-                                    <div class="home-claim2">
-                                      <span class="home-text74"
-                                        ><span>Claim</span></span
-                                      >
-                                    </div>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -663,19 +476,77 @@
     });
   </script>
   <script>
+    const options = document.querySelectorAll(".option");
 
-      const options = document.querySelectorAll('.option');
-
-      options.forEach((option) => {
-        option.addEventListener('click', () => {
-          options.forEach((otherOption) => {
-            if (otherOption !== option) {
-              otherOption.classList.remove('selected');
-            }
-          });
-
-          option.classList.toggle('selected');
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
+        options.forEach((otherOption) => {
+          if (otherOption !== option) {
+            otherOption.classList.remove("selected");
+          }
         });
+
+        option.classList.toggle("selected");
       });
+    });
+  </script>
+  <script>
+    const images = document.querySelectorAll(".image-select");
+    const chooseBtn = document.getElementById("chooseImageBtn");
+    const deselectBtn = document.getElementById("deselectImageBtn");
+    const nft_text = document.querySelector(".home-nft-text");
+    const nft_optional = document.querySelector(".home-nft-optional");
+    let selectedImage = null;
+
+    images.forEach((img) => {
+      img.addEventListener("click", () => {
+        if (img === selectedImage) {
+          img.classList.remove("selected");
+          nft_text.textContent = "Choose NFT";
+          nft_optional.textContent = "(optional)";
+          selectedImage = null;
+          chooseBtn.disabled = true;
+          deselectBtn.disabled = true;
+        } else {
+          images.forEach((img) => {
+            img.classList.remove("selected");
+          });
+          img.classList.add("selected");
+          nft_text.textContent = "Chosen";
+          nft_optional.textContent = "";
+          selectedImage = img;
+          chooseBtn.disabled = false;
+          deselectBtn.disabled = false;
+        }
+      });
+    });
+
+    chooseBtn.addEventListener("click", () => {
+      console.log("Selected Image:", selectedImage.dataset.img);
+      $("#imageModal").modal("hide");
+    });
+
+    deselectBtn.addEventListener("click", () => {
+      selectedImage.classList.remove("selected");
+      selectedImage = null;
+      chooseBtn.disabled = true;
+      deselectBtn.disabled = true;
+    });
+  </script>
+  <script>
+    const img_options = document.querySelectorAll(".img-option");
+    const divs = document.querySelectorAll("[data-img]");
+
+    img_options.forEach((img_option) => {
+      img_option.addEventListener("click", () => {
+        img_options.forEach((otherOption) => {
+          if (otherOption !== img_option) {
+            otherOption.classList.remove("selected");
+          }
+        });
+
+        img_option.classList.toggle("selected");
+      });
+    });
   </script>
 </html>
