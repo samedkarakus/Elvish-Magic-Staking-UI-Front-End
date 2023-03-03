@@ -229,12 +229,11 @@
   justify-content: space-between;
 }
 .home-apy-details1 {
-  width: 270px;
+  width: 350px;
   display: flex;
   position: relative;
   align-items: flex-start;
   border-color: transparent;
-  margin-right: 86px;
   flex-direction: column;
 }
 .home-text12 {
@@ -337,6 +336,7 @@
   text-decoration: none;
 }
 .home-stake-claim-container {
+  width: 100%;
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -345,7 +345,7 @@
   flex-direction: column;
 }
 .home-stake-container {
-  width: 515px;
+  width: 100%;
   display: flex;
   position: relative;
   align-self: center;
@@ -355,7 +355,7 @@
   justify-content: center;
 }
 .home-stake-amount {
-  width: 226px;
+  width: 48%;
   display: flex;
   padding: 4.598709583282471px 18.394838333129883px;
   position: relative;
@@ -396,13 +396,13 @@ input[type="text"]:focus {
 }
 
 .home-container1 {
-  width: 275px;
+  width: 48%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .home-stake-btn {
-  width: 133px;
+  width: 48%;
   cursor: pointer;
   display: flex;
   padding: 5.365160942077637px 30.658063888549805px;
@@ -566,7 +566,7 @@ input[type="text"]:focus {
   text-decoration: none;
 }
 .home-stake-btn1 {
-  width: 133px;
+  width: 48%;
   cursor: pointer;
   display: flex;
   padding: 5.365160942077637px 30.658063888549805px;
@@ -1018,7 +1018,7 @@ input[type="text"]:focus {
     align-items: stretch;
   }
   .home-apy-details {
-    width: 428px;
+    width: 500px;
     align-self: flex-start;
     margin-top: 30px;
   }
@@ -1056,7 +1056,7 @@ input[type="text"]:focus {
   }
   .home-inner-container {
     width: 100%;
-    height: 1762px;
+    height: 1650px;
     align-self: flex-start;
     margin-top: 0px;
     margin-right: 0px;
@@ -1150,25 +1150,24 @@ input[type="text"]:focus {
     width: 473px;
   }
   .home-apy-details {
+    width: 400px;
     align-self: center;
   }
   .home-stake-claim-container {
     align-self: center;
-  }
-  .home-stake-container {
-    width: 443px;
+    width: 400px;
   }
   .home-stake-amount {
-    width: 50%;
+    width: 44%;
   }
   .home-container1 {
     width: 210px;
   }
   .home-stake-btn {
-    width: 100px;
+    width: 48%;
   }
   .home-stake-btn1 {
-    width: 100px;
+    width: 48%;
   }
   .home-claim-amount {
     width: 294px;
@@ -1230,12 +1229,12 @@ input[type="text"]:focus {
   }
   .home-inner-container {
     width: 463px;
-    height: 1917px;
+    height: 1850px;
     margin-bottom: 0px;
   }
   .home-participate-container {
     width: 376px;
-    height: 905px;
+    height: 975px;
   }
   .home-contain {
     width: 357px;
@@ -1279,6 +1278,7 @@ input[type="text"]:focus {
     align-self: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 75px;
   }
   .home-apy-details1 {
     width: 235px;
@@ -1289,23 +1289,21 @@ input[type="text"]:focus {
     width: 50%;
   }
   .home-stake-claim-container {
+    width: 325px;
     align-items: center;
     justify-content: center;
   }
-  .home-stake-container {
-    width: 315px;
-  }
   .home-stake-amount {
-    width: 128px;
+    width: 40%;
   }
   .home-container1 {
     width: 170px;
   }
   .home-stake-btn {
-    width: 80px;
+    width: 48%;
   }
   .home-stake-btn1 {
-    width: 80px;
+    width: 48%;
   }
   .home-claim-container {
     width: 315px;

@@ -36,6 +36,10 @@
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
 
     <style data-tag="reset-style-sheet">
       html {
@@ -231,11 +235,20 @@
                   <div class="home-bottom">
                     <div class="home-apy-details">
                       <div class="home-apy-details1">
+                        <span class="home-text12">
+                          <span>Available Value: </span>
+                          <span>4661524261</span>
+                          <span>M $EMP</span>
+                        </span>
                         <span class="home-text14">
-                          <span>Extends lock on registration: Yes</span>
+                          <span>Staked Value: </span>
+                          <span>10</span>
+                          <span>K $EMP</span>
                         </span>
                         <span class="home-text16">
-                          <span>Early unstake fee: 30%</span>
+                          <span>Claimable Reward: </span>
+                          <span>0.00000000000245</span>
+                          <span> $EMP</span>
                         </span>
                         <span class="home-text18">
                           <span>Status: Unlocked</span>
@@ -546,6 +559,24 @@
         });
 
         img_option.classList.toggle("selected");
+      });
+    });
+  </script>
+
+  <!-- Stake edildikten sonra entegre edilecek olan fonksiyon -->
+  <script>
+    // const stakeButton = document.getElementsByClassName("home-stake-btn");
+    // const chooseNftButton = document.getElementsByClassName("home-nft-btn");
+    // const stakeInput = document.getElementsByClassName("home-stake-amount");
+    // const claimButton = document.getElementsByClassName("home-claim-btn");
+
+    // Stake edildikten sonra
+    $(document).ready(function () {
+      $(".home-stake-btn").click(function () {
+        $(".home-stake-btn").hide();
+        $(".home-nft-btn").hide();
+        $(".home-claim-btn").css("width", "100%");
+        $(".home-stake-btn1").css("width", "100%");
       });
     });
   </script>
